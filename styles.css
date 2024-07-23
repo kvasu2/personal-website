@@ -1,0 +1,83 @@
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh; /* 90% of the viewport height */
+    overflow: hidden;
+}
+
+.container {
+    display: flex; /* Use Flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.intro-text {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add some padding */
+}
+
+.header-image {
+    max-height: 80%; /* 90% of the container's height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 50%; /* Ensure it doesn't exceed half the container width */
+    object-fit: contain; /* Ensure the entire image is visible */
+    margin-left: auto; /* Push the image to the right */
+}
+
+.navbar {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1; /* Ensure navbar is above the header image */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightgray;
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+}
+
+body {
+    display: flex; /* Use flexbox for the body */
+    flex-direction: column; /* Stack children vertically */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1; /* Allow main content to grow and fill available space */
+    padding: 20px; /* Add padding for main content */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightgray;
+}
